@@ -1,0 +1,138 @@
+:root {
+  --color-white: #fff;
+  --color-grey: #c4c4c4;
+}
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* End CSS Reset */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5f7;
+  background-color: #e5e5f7;
+  background-image: linear-gradient(135deg, #444cf7 25%, transparent 25%),
+    linear-gradient(225deg, #444cf7 25%, transparent 25%),
+    linear-gradient(45deg, #444cf7 25%, transparent 25%),
+    linear-gradient(315deg, #444cf7 25%, #e5e5f7 25%);
+  background-position: 4px 0, 4px 0, 0 0, 0 0;
+  background-size: 4px 4px;
+  background-repeat: repeat;
+}
+.card {
+  min-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 0.5remr rgba(0, 0, 0, 0.2);
+}
+.card .first {
+  height: 10rem;
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #444cf7, #e5e5f7),
+    repeating-radial-gradient(
+      circle at center center,
+      #444cf7,
+      #444cf7,
+      4px,
+      transparent 8px,
+      transparent 4px
+    );
+  background-blend-mode: multiply;
+}
+.card .middel {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -7rem;
+}
+.card .middel .photo {
+  width: 12rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 0.4rem solid white;
+  z-index: 1;
+}
+.heading-name {
+  margin-top: -3rem;
+  font-size: 2.2rem;
+}
+.heading-profission {
+  font-size: 1.6rem;
+}
+
+.card .last {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  border-top: 0.1rem solid gray;
+  justify-content: center;
+}
+.column {
+  text-align: center;
+  padding: 1rem;
+}
+.column:nth-child(2) {
+  border-right: 0.1rem solid gray;
+  border-left: 0.1rem solid gray;
+}
+/* .social {
+} */
+
+.social-pic {
+  width: 2.5rem;
+}
+.user-acount {
+  font-size: 1.2rem;
+  text-align: center;
+}
